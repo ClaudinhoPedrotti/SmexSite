@@ -1,0 +1,449 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <head>
+  
+  
+   <link rel="shortcut icon" href="images/favicon.png"/>  
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMEX Compostos Plásticos</title>
+    <meta name="description" content="">
+       <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/templatemo_justified.css" rel="stylesheet">
+
+   
+<!-- SLIDER CSS -->
+<style type="text/css">
+
+
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+    outline: none;
+}
+
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* FlexSlider Necessary Styles
+*********************************/
+
+.flexslider li {
+    border: 0 none !important;
+    padding: 0 !important;
+    text-indent: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.flexslider {
+    margin: 0;
+    padding: 0;
+}
+
+.flexslider .slides > li {
+    display: none;
+    -webkit-backface-visibility: hidden;
+}
+
+#flex-isfb {
+    overflow: hidden;
+    position: relative;
+    min-height: 200px;
+    padding: 3px;
+}
+
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+
+.flexslider .slides img {
+    width: 100%;
+    display: block;
+}
+
+.flexslider .slides,
+.flexslider .slides img,
+.flex-direction-nav {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.flex-pauseplay span {
+    text-transform: capitalize;
+}
+
+
+/* Clearfix for the .slides element */
+
+.slides:after {
+    content: "\0020";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+html[xmlns] .slides {
+    display: block;
+}
+
+* html .slides {
+    height: 1%;
+}
+
+
+/* No JavaScript Fallback */
+
+
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+
+.no-js .slides > li:first-child {
+    display: block;
+}
+
+
+/* FlexSlider Default Theme
+*********************************/
+
+.flexslider {
+    margin: 0 0 60px;
+    background: #fff;
+    border: 1px solid #fff;
+    position: relative;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+    -o-box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+    zoom: 1;
+}
+
+.flex-viewport {
+    max-height: 2000px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.loading .flex-viewport {
+    max-height: 300px;
+}
+
+.flexslider .slides {
+    zoom: 1;
+}
+
+.carousel li {
+    margin-right: 5px;
+}
+
+
+/* Direction Nav */
+
+.flex-direction-nav {
+    *height: 0;
+}
+
+.flex-direction-nav a {
+    text-decoration: none;
+    display: block;
+    width: 40px;
+    height: 45px;
+    margin: -20px 0 0;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    overflow: hidden;
+    opacity: 0;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.flex-direction-nav .flex-prev {
+    background: url("http://project.dimpost.com/flexslider-basic/img/arrows1.png") no-repeat scroll -15px -92px transparent;
+    left: -50px;
+}
+
+.flex-direction-nav .flex-next {
+    background: url("http://project.dimpost.com/flexslider-basic/img/arrows1.png") no-repeat scroll -15px -15px transparent;
+    right: -50px;
+    text-align: right;
+}
+
+.flexslider:hover .flex-prev {
+    opacity: 0.5;
+    left: 10px;
+}
+
+.flexslider:hover .flex-next {
+    opacity: 0.5;
+    right: 10px;
+}
+
+.flexslider:hover .flex-next:hover,
+.flexslider:hover .flex-prev:hover {
+    opacity: 0.9;
+}
+
+
+/* Pause/Play */
+
+.flex-pauseplay a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    opacity: 0.8;
+    z-index: 10;
+    overflow: hidden;
+    cursor: pointer;
+    color: #000;
+}
+
+.flex-pauseplay a:before {
+    font-family: "flexslider-icon";
+    font-size: 20px;
+    display: inline-block;
+    content: '\f004';
+}
+
+.flex-pauseplay a:hover {
+    opacity: 1;
+}
+
+.flex-pauseplay a.flex-play:before {
+    content: '\f003';
+}
+
+
+/* Control Nav */
+
+.flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: -40px;
+    text-align: center;
+}
+
+.flex-control-nav li {
+    margin: 0 6px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+.flex-control-paging li a {
+    width: 11px;
+    height: 11px;
+    display: block;
+    background: #666;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    text-indent: -9999px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.flex-control-paging li a:hover {
+    background: #333;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.flex-control-paging li a.flex-active {
+    background: #000;
+    background: rgba(0, 0, 0, 0.9);
+    cursor: default;
+}
+
+.flex-control-thumbs {
+    margin: 5px 0 0;
+    position: static;
+    overflow: hidden;
+}
+
+.flex-control-thumbs li {
+    width: 25%;
+    float: left;
+    margin: 0;
+}
+
+.flex-control-thumbs img {
+    width: 100%;
+    display: block;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.flex-control-thumbs img:hover {
+    opacity: 1;
+}
+
+.flex-control-thumbs .flex-active {
+    opacity: 1;
+    cursor: default;
+}
+
+@media screen and (max-width: 860px) {
+    .flex-direction-nav .flex-prev {
+        opacity: 1;
+        left: 10px;
+    }
+    .flex-direction-nav .flex-next {
+        opacity: 1;
+        right: 10px;
+    }
+}
+</style>
+
+
+
+<!-- SLIDER HTML -->
+
+
+<div id="flex-isfb">
+<!-- Preloader -->
+   
+
+<div id="preloader">
+</div>
+<style>
+    /* Preloader */
+    
+    #preloader {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        /* change if the mask should have another color then white */
+        z-index: 999999999999;
+        /* makes sure it stays on top */
+    }
+    </style>
+  
+    
+  </head>
+  <body>
+  
+
+    <div id="container" class="container">
+  <center>
+  
+  <img src="images/logo-smex.png" /><br>
+<br>
+</center>
+   
+<br>
+
+<ul class="nav nav-justified">
+   <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicos.html">Produtos e Serviços</a></li>   
+          
+           <li><a href="clientes.html">Clientes e Fornecedores</a></li> 
+    <li><a href="contato.html">Contato</a></li>
+      </ul>
+        
+      <div class="row space30"> 
+      
+      <!-- row 1 begins -->
+      
+<div class="flexslider">
+<ul class="slides">
+
+<li>
+<a href="#">
+<img src="images/smex-slide-1.png"></a></li>
+            
+            
+<li>
+<a href="#">
+<img src="images/smex-slide-2.png"></a></li>
+
+<li>
+<a href="#">
+<img src="images/smex-slide-3.png"></a></li>
+</a></li>
+</ul>
+</div>
+
+<!-- SLIDER JS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://project.dimpost.com/flexslider-basic/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+    $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: true,
+        directionNav: true,
+        easing: "swing",
+        slideshowSpeed: 6000,
+        animationSpeed: 600,
+    });
+});
+</script>
+<script type="text/javascript">
+//<![CDATA[
+$(window).load(function() {
+        $('#preloader').delay(350).fadeOut('slow');
+    })
+    //]]>
+</script>
+
+ 
+ 
+ <div class="container-titulo"> 
+    
+<strong>Bem vindo à	SMEX</strong><br>      
+
+      
+      <p> 
+Comprometidos com a excelência em tudo o que fazemos, nós da SMEX temos orgulho em ser uma empresa genuinamente brasileira de Masterbatches e Compostos plásticos, certificados ISO 9001:2015, com sede própria e há 18 anos desenvolvendo tecnologia junto aos maiores transformadores de termoplásticos do país.   <a href="download/politica_qualidade.pdf" download="Politica Qualidade.pdf">    Download Política de Qualidade</a>
+</p>
+      <p>Contamos com um corpo técnico altamente especializado e  atualizado,  e uma equipe administrativa engajada visando atender as necessidades dos nossos clientes e oferecer os melhores produtos e serviços. <br />
+        <br>
+        
+        
+        <strong>Promovendo Tecnologia</strong><br>
+        Uma das nossas maiores ferramentas  para atender o mercado de forma satisfatória é o investimento em estrutura de pesquisa e especialização de nossos profissionais, desta forma torna-se possível atingir a melhor  performance dos nossos produtos, permitindo  o fornecimento de cores com alto poder de dispersão, compostos com alto índice de características agregadas e o que há de mais moderno em aditivação de termoplásticos e ativos  de processo..</p>
+      <p><br>
+      </p>
+      </div>
+        </div>  
+
+      <!-- Site footer -->
+        <div class="footer">
+        <p> <img src="images/favicon.png" alt="" width="30" height="30"> <br>
+          SMEX Compostos  Plásticos LTDA. - Rua Bernardo Svartmann, 522 -   Embu Guaçu - SP</p>
+  </div>
+  </div>
+  </div>
+
+  </body>
+</html>

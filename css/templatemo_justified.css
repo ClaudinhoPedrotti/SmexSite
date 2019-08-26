@@ -1,0 +1,114 @@
+/* 
+Simplex Template 
+http://www.templatemo.com/preview/templatemo_382_simplex 
+*/
+
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 16px;
+	line-height: 1.428571429;
+	color: #333
+}
+
+
+.responsivo {
+           max-width: 361px;
+           width: 100%;
+           height: auto;
+}
+
+.space30 { margin-top: 30px; }
+
+.row ul { padding-left: 30px; }
+
+.clear { clear: both; }
+
+.float_left { float: left; }
+.float_right { float: right; }
+
+.img_left_gallery {	float: left; margin: 12px; padding: 8px; border: 1px solid #CCC; }
+
+.img_left {	float: left; margin-right: 20px; margin-bottom: 15px; }
+
+.img_right { float: right; margin: 0px 0px 15px 20px; }
+
+.img_bottom { margin-bottom: 15px; }
+
+
+
+.container-logo{
+	padding-right: 50px;
+	padding-left: 90px;
+	margin-right: auto;
+	margin-left: auto;	
+}
+
+.footer {
+	margin-top: 40px;
+	padding-top: 20px;
+	border-top-width: medium;
+	border-top-style: solid;
+	border-top-color: #003399;
+	font-style: italic;
+	color: #FF0000;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  height: 0px;
+}
+
+a:hover {
+	color: #0000FF;
+}
+
+.nav-justified > li > a {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: #0000FF;
+	font-weight: bold; /* Old browsers */
+	background-repeat: repeat-x; /* Repeat the gradient */
+
+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0099FF', endColorstr='#006699',GradientType=0 ); /* W3C */
+	font-style: italic;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #993300;
+}
+
+.nav-justified > .active > a,
+.nav-justified > .active > a:hover,
+.nav-justified > .active > a:focus {
+	color: #993300;
+	border-bottom-width: thin;
+	border-bottom-style: double;
+	border-bottom-color: #000066;
+}
+
+.nav-justified > li > a:hover {
+	color: #000066;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #FF0000;
+	background-color: #FFF;
+}
+
+@media (min-width: 768px) {
+  .nav-justified {
+	max-height: 40px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .masthead,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
